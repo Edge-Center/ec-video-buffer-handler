@@ -1,0 +1,19 @@
+Pod::Spec.new do |s|
+  s.name             = 'EdgeCenterVideoBufferHandler'
+  s.version          = '1.0.0'
+  s.summary          = 'Streaming platform based on EdgeCenter services.'
+
+  s.description      = <<-DESC
+Streaming platform based on EdgeCenter services.
+                       DESC
+
+  s.homepage         = 'https://github.com/Edge-Center/ec-video-buffer-handler'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'MaksimMyakishev' => 'Maksim.myakishev@edgecenter.ru' }
+ s.source           = { :http => 'file:' + __dir__ + '/EdgeCenterVideoBufferHandler.xcframework.zip' }
+  s.swift_version      = '5.3'
+  s.vendored_frameworks = "EdgeCenterVideoBufferHandler.xcframework"
+  s.ios.deployment_target = '12.0'
+  s.requires_arc          = true
+
+end
